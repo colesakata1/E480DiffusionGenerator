@@ -119,8 +119,8 @@ class unet(nn.Module):
             num_groups: int = 32,
             dropout_prob: float = 0.1,
             num_heads: int = 8,
-            input_channels: int = 1,
-            output_channels: int = 1,
+            input_channels: int = 3,
+            output_channels: int = 3,
             time_steps: int = 1000):
         super().__init__()
         self.num_layers = len(Channels)
